@@ -1,0 +1,11 @@
+<nb-card>
+  <nb-card-header>
+    Students Table
+    <button class="btn btn-primary" style="cursor : pointer; float: right" (click)="showModalAddStudent()">Add new</button>
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" (custom)="onCustom($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

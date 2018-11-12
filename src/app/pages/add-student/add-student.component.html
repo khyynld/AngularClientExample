@@ -1,0 +1,58 @@
+<div class="modal-header">
+  <span>{{ modalHeader }}</span>
+  <button class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="StudentID" class="form-control" [(ngModel)]="id" name="id" />
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="Name" class="form-control" [(ngModel)]="name" name="name" />
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="Class" class="form-control" [(ngModel)]="classs" name="classs" />
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" name="phonenumber" placeholder="Phonenumber" class="form-control" [(ngModel)]="phonenumber" />
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" name="address" placeholder="Address" class="form-control" [(ngModel)]="address" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-md btn-primary" style="cursor : pointer" type="submit" (click)="onSubmit()">ADD</button>
+</div>

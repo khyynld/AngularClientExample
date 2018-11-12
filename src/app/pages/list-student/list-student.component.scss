@@ -1,0 +1,20 @@
+:host /deep/ ng2-smart-table table {
+  margin-top: 10px;
+}
+
+:host /deep/ ng2-smart-table table tbody tr td:nth-child(1) {
+  height: unset !important;
+}
+
+:host /deep/ ng2-smart-table table tbody tr td:nth-child(1)>ng2-st-tbody-custom {
+  display: flex;
+}
+
+:host /deep/ ng2-smart-table table tbody tr td:nth-child(1)>ng2-st-tbody-custom a i {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+:host /deep/ ng2-smart-table table thead tr th:nth-child(1) {
+  width: 12%;
+}

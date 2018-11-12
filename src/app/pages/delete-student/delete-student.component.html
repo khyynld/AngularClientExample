@@ -1,0 +1,17 @@
+<div class="modal-header">
+  <span>{{ modalHeader }}</span>
+  <button class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <div class="container">
+    <span>
+      <h2>Are you sure?</h2>
+    </span>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" style="cursor : pointer" type="submit" (click)="onSubmit()">Delete</button>
+</div>
